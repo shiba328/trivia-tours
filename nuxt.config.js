@@ -6,7 +6,7 @@ const localEnvSet = require(`./env.${environment}.js`)
 const envSet = Object.assign(globalEnvSet, localEnvSet)
 
 export default {
-  mode: 'spa',
+  mode: 'universal',
   env: envSet,
   srcDir: 'src',
   /*
