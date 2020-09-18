@@ -21,11 +21,6 @@
     }
   },
   "dependencies": {
-    "@interactjs/actions": "^1.9.22",
-    "@interactjs/auto-start": "^1.9.22",
-    "@interactjs/dev-tools": "^1.9.22",
-    "@interactjs/interact": "^1.9.22",
-    "@interactjs/modifiers": "^1.9.22",
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/pwa": "^3.0.0-0",
     "nuxt": "^2.0.0",

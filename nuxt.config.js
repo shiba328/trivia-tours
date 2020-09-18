@@ -42,7 +42,7 @@ export default {
   plugins: [
     '@/plugins/genColor',
     '@/plugins/global',
-    '@/plugins/firebase',
+    // '@/plugins/firebase',
     '@/plugins/t',
     '@/plugins/addClass',
     '@/plugins/vuedraggable',

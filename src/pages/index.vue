@@ -18,7 +18,7 @@
         :style="centerMiddle({cw: mapWidth, ch: mapHeight, tw: 450, th: 340})"
       )
     FrontPanel()
-    openDialog(
+    OpenDialog(
       ref="dialog"
       @emitMyStatus="setMyStatus"
     )
@@ -34,6 +34,7 @@ import JapanMapRect from '~/components/JapanMapRect.vue'
 import SetPoint from '~/components/SetPoint.vue'
 import OpenDialog from '~/components/OpenDialog.vue'
 import MyStatus from '~/components/MyStatus.vue'
+import FrontPanel from '~/components/FrontPanel.vue'
 
 const posts = [
   {
@@ -102,7 +103,8 @@ export default {
     JapanMapRect,
     SetPoint,
     OpenDialog,
-    MyStatus
+    MyStatus,
+    FrontPanel
   },
   data () {
     return {
