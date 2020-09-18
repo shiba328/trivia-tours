@@ -1,5 +1,5 @@
 module.exports = {
-  name: 'QUSY',
+  name: '',
   description: 'QUSY is Quiz Control System',
   themeColor: '#ffffff',
   contact: 'https://forms.gle/ob36tAD7RkqTwb4e8',
