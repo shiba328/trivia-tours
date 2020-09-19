@@ -8,7 +8,7 @@ const envSet = Object.assign(globalEnvSet, localEnvSet)
 export default {
   mode: 'universal',
   env: envSet,
-  srcDir: 'src',
+  srcDir: 'src/',
   /*
   ** Headers of the page
   */
