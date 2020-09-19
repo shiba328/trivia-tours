@@ -1,5 +1,6 @@
 <template lang="pug">
   v-app(
+    v-if="mapWidth && mapHeight"
     :style="{width: `${mapWidth}px`, height: `${mapHeight}px`}"
   )
     svg(
