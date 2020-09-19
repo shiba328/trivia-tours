@@ -46,8 +46,8 @@ export default {
     '@/plugins/t',
     '@/plugins/addClass',
     '@/plugins/vuedraggable',
-    '@/plugins/formatData',
-    '@/plugins/qrReader'
+    '@/plugins/formatData'
+    // '@/plugins/qrReader'
   ],
   /*
   ** Nuxt.js dev-modules
