@@ -103,10 +103,10 @@ export default {
   ** Build configuration
   */
   build: {
-    quiet: false,
-    splitChunks: {
-      layouts: true
-    },
+    // quiet: false,
+    // splitChunks: {
+    //   layouts: true
+    // },
     /*
      ** You can extend webpack config here
      */
