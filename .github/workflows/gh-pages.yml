@@ -32,10 +32,10 @@ jobs:
 
     - name: generate
       run: npm run generate
-    # - name: CNAME
-    #   run: |
-    #     cd dist
-    #     echo test.bango.tech > CNAME
+    - name: CNAME
+      run: |
+        cd dist
+        echo test.triviakingdom.com. > CNAME
     - name: deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
