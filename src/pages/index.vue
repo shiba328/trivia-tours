@@ -1,33 +1,34 @@
 <template lang="pug">
-  v-app(
+  v-app
+    div(
     v-if="mapWidth && mapHeight"
     :style="{width: `${mapWidth}px`, height: `${mapHeight}px`}"
-  )
-    svg(
-      :viewBox="`0 0 ${mapWidth} ${mapHeight}`"
     )
-      JapanMapRect(
-        :style="centerMiddle({cw: mapWidth, ch: mapHeight, tw: 450, th: 340})"
+      svg(
+        :viewBox="`0 0 ${mapWidth} ${mapHeight}`"
       )
-      SetPoint(
-        :points="points"
-        @emitPoint="openWindow"
-        :style="centerMiddle({cw: mapWidth, ch: mapHeight, tw: 450, th: 340})"
+        JapanMapRect(
+          :style="centerMiddle({cw: mapWidth, ch: mapHeight, tw: 450, th: 340})"
+        )
+        SetPoint(
+          :points="points"
+          @emitPoint="openWindow"
+          :style="centerMiddle({cw: mapWidth, ch: mapHeight, tw: 450, th: 340})"
+        )
+        MyStatus(
+          :status="myStatus"
+          :style="centerMiddle({cw: mapWidth, ch: mapHeight, tw: 450, th: 340})"
+        )
+      FrontPanel()
+      OpenDialog(
+        ref="dialog"
+        @emitMyStatus="setMyStatus"
       )
-      MyStatus(
-        :status="myStatus"
-        :style="centerMiddle({cw: mapWidth, ch: mapHeight, tw: 450, th: 340})"
-      )
-    FrontPanel()
-    OpenDialog(
-      ref="dialog"
-      @emitMyStatus="setMyStatus"
-    )
-    v-btn(
-      small
-      style="position: absolute;"
-      @click="removeMyStatus"
-    ) データの削除
+      v-btn(
+        small
+        style="position: absolute;"
+        @click="removeMyStatus"
+      ) データの削除
 </template>
 
 <script>
