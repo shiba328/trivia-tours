@@ -1,6 +1,6 @@
 # trivia-tours
 
-> My classy Nuxt.js project
+> trivia-tours
 
 ## Build Setup
 
