@@ -9,6 +9,9 @@ export default {
   mode: 'universal',
   env: envSet,
   srcDir: 'src/',
+  router: {
+    base: '/trivia-tours/'
+  },
   /*
   ** Headers of the page
   */
