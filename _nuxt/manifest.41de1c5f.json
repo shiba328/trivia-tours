@@ -3,7 +3,7 @@
   "short_name": "trivia-tours",
   "description": "trivia-tours",
   "icons": [],
-  "start_url": "/?standalone=true",
+  "start_url": "/trivia-tours/?standalone=true",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#fff",
