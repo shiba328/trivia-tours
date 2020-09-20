@@ -1,8 +1,9 @@
 <template lang="pug">
   v-app
     div(
-    v-if="mapWidth && mapHeight"
-    :style="{width: `${mapWidth}px`, height: `${mapHeight}px`}"
+      v-if="mapWidth && mapHeight"
+      style="position: relative"
+      :style="{width: `${mapWidth}px`, height: `${mapHeight}px`}"
     )
       svg(
         :viewBox="`0 0 ${mapWidth} ${mapHeight}`"
@@ -26,7 +27,7 @@
       )
       v-btn(
         small
-        style="position: absolute;"
+        style="position: absolute;top:0;left: 0;"
         @click="removeMyStatus"
       ) データの削除
 </template>
